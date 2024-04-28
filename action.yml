@@ -7,14 +7,11 @@ runs:
       run: |
         # First we need to get is this is amd64 or arm64
         if [[ "$(uname -m)" == "x86_64" ]]; then
-          curl -O https://github.com/kerren/dockem/releases/download/v2.1.0/dockem-v2.1.0-linux-amd64
-          chmod +x dockem-v2.1.0-linux-amd64
-          mv dockem-v2.1.0-linux-amd64 dockem
+          curl -L -o dockem https://github.com/kerren/dockem/releases/download/v2.1.0/dockem-v2.1.0-linux-amd64
         else
-          curl -O https://github.com/kerren/dockem/releases/download/v2.1.0/dockem-v2.1.0-linux-arm64
-          chmod +x dockem-v2.1.0-linux-arm64
-          mv dockem-v2.1.0-linux-arm64 dockem
+          curl -L -o dockem https://github.com/kerren/dockem/releases/download/v2.1.0/dockem-v2.1.0-linux-arm64
         fi
+        chmod +x dockem
       shell: bash
 
     - name: Add the dockem binary to the path
