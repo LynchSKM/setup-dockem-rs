@@ -20,5 +20,5 @@ jobs:
         run: |
           set -x
           echo $PATH
-          ls -lah /home/runner/work/_actions/kerren/setup-dockem/v1.0.1
+          ls -lah /home/runner/work/_actions/kerren/setup-dockem/v1.0.2
           dockem --version
