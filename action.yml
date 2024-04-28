@@ -1,5 +1,9 @@
 name: 'Setup Dockem'
 description: 'Sets up the dockem cli for use in your actions'
+author: 'Kerren Ortlepp'
+branding:
+  icon: 'terminal'
+  color: 'gray-dark'
 runs:
   using: "composite"
   steps:
