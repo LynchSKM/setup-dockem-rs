@@ -14,11 +14,11 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup Dockem
-        uses: kerren/setup-dockem@v1.0.2
+        uses: kerren/setup-dockem@v1.0.3
 
       - name: Run Dockem
         run: |
           set -x
           echo $PATH
-          ls -lah /home/runner/work/_actions/kerren/setup-dockem/v1.0.2
+          ls -lah /home/runner/work/_actions/kerren/setup-dockem/v1.0.3
           dockem --version
