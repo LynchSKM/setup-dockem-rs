@@ -23,9 +23,7 @@ runs:
       shell: bash
 
     - name: Add the dockem binary to the path
-      run: |
-        set -x
-        echo "$GITHUB_ACTION_PATH" >> $GITHUB_PATH
+      run: echo "$GITHUB_ACTION_PATH" >> $GITHUB_PATH
       shell: bash
       env:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
