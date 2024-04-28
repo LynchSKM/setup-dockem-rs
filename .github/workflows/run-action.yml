@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - develop
 
 jobs:
   run:
@@ -16,4 +17,8 @@ jobs:
         uses: kerren/setup-dockem@v1.0.0
 
       - name: Run Dockem
-        run: dockem --version
+        run: |
+          set -x
+          echo $PATH
+          ls -lah /home/runner/work/_actions/kerren/setup-dockem/v1.0.0
+          dockem --version
