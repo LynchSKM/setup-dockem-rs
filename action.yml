@@ -1,0 +1,24 @@
+name: 'Setup Dockem'
+description: 'Sets up the dockem cli for use in your actions'
+runs:
+  using: "composite"
+  steps:
+    - name: Pull the dockem binary
+      run: |
+        # First we need to get is this is amd64 or arm64
+        if [[ "$(uname -m)" == "x86_64" ]]; then
+          curl -O https://github.com/kerren/dockem/releases/download/v2.1.0/dockem-v2.1.0-linux-amd64
+          chmod +x dockem-v2.1.0-linux-amd64
+          mv dockem-v2.1.0-linux-amd64 dockem
+        else
+          curl -O https://github.com/kerren/dockem/releases/download/v2.1.0/dockem-v2.1.0-linux-arm64
+          chmod +x dockem-v2.1.0-linux-arm64
+          mv dockem-v2.1.0-linux-arm64 dockem
+        fi
+      shell: bash
+
+    - name: Add the dockem binary to the path
+      run: echo "$GITHUB_ACTION_PATH" >> $GITHUB_PATH
+      shell: bash
+      env:
+        GITHUB_ACTION_PATH: ${{ github.action_path }}
