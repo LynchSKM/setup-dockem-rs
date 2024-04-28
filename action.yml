@@ -17,7 +17,7 @@ runs:
           mv dockem-v2.1.0-linux-amd64 dockem
         else
           wget https://github.com/kerren/dockem/releases/download/v2.1.0/dockem-v2.1.0-linux-arm64
-          chmod +x dockem
+          chmod +x dockem-v2.1.0-linux-arm64
           mv dockem-v2.1.0-linux-arm64 dockem
         fi
       shell: bash
