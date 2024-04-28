@@ -17,8 +17,4 @@ jobs:
         uses: kerren/setup-dockem@v1.0.4
 
       - name: Run Dockem
-        run: |
-          set -x
-          echo $PATH
-          ls -lah /home/runner/work/_actions/kerren/setup-dockem/v1.0.4
-          dockem --version
+        run: dockem --version
