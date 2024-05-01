@@ -12,13 +12,13 @@ runs:
         cd "$GITHUB_ACTION_PATH"
         # First we need to get is this is amd64 or arm64
         if [[ "$(uname -m)" == "x86_64" ]]; then
-          wget https://github.com/kerren/dockem/releases/download/v2.2.0/dockem-v2.2.0-linux-amd64
-          chmod +x dockem-v2.2.0-linux-amd64
-          mv dockem-v2.2.0-linux-amd64 dockem
+          wget https://github.com/kerren/dockem/releases/download/v2.3.0/dockem-v2.3.0-linux-amd64
+          chmod +x dockem-v2.3.0-linux-amd64
+          mv dockem-v2.3.0-linux-amd64 dockem
         else
-          wget https://github.com/kerren/dockem/releases/download/v2.2.0/dockem-v2.2.0-linux-arm64
-          chmod +x dockem-v2.2.0-linux-arm64
-          mv dockem-v2.2.0-linux-arm64 dockem
+          wget https://github.com/kerren/dockem/releases/download/v2.3.0/dockem-v2.3.0-linux-arm64
+          chmod +x dockem-v2.3.0-linux-arm64
+          mv dockem-v2.3.0-linux-arm64 dockem
         fi
       shell: bash
 
