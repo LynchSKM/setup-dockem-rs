@@ -29,7 +29,7 @@ jobs:
         run: dockem --version
 ```
 
-You are able to track a specific version or the lastest within that major version number. For instance, you can use `v2.1.0` like so,
+You are able to track a specific version or the latest within that major version number. For instance, you can use `v2.1.0` like so,
 
 ```yaml
       - name: Setup Dockem
