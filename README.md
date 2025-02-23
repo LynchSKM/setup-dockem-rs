@@ -1,4 +1,4 @@
-![Dockem](docs/logo.png)
+![Dockem-RS](docs/logo.png)
 
 This is the Github Action used to install the [dockem-rs](https://github.com/LynchSKM/dockem-rs) `cli`.
 
@@ -31,18 +31,18 @@ jobs:
 
 You are able to track a specific version or the latest within that major version number. For instance, you can use `v1.1.1` like so,
 ```yaml
-      - name: Setup Dockem
+      - name: Setup dockem-rs
         uses: LynchSKM/setup-dockem-rs@v1.1.1
 
-      - name: Run Dockem
+      - name: Run dockem-rs
         run: dockem-rs --version
 ```
 
 Or use the latest of version `1` like so,
 ```yaml
-      - name: Setup Dockem
+      - name: Setup dockem-rs
         uses: LynchSKM/setup-dockem-rs@v1
 
-      - name: Run Dockem
+      - name: Run dockem-rs
         run: dockem-rs --version
 ```
