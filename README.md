@@ -29,10 +29,10 @@ jobs:
         run: dockem-rs --version
 ```
 
-You are able to track a specific version or the latest within that major version number. For instance, you can use `v1.0.3` like so,
+You are able to track a specific version or the latest within that major version number. For instance, you can use `v1.0.4` like so,
 ```yaml
       - name: Setup Dockem
-        uses: LynchSKM/setup-dockem-rs@v1.0.3
+        uses: LynchSKM/setup-dockem-rs@v1.0.4
 
       - name: Run Dockem
         run: dockem-rs --version

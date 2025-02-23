@@ -17,4 +17,4 @@ jobs:
         uses: LynchSKM/setup-dockem-rs@v1
 
       - name: Run dockem-rs
-        run: dockem-rs --version
+        run: dockem-rs version
