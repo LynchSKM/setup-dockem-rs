@@ -1,10 +1,10 @@
 ![Dockem-RS](docs/logo.png)
 
-This is the Github Action used to install the [dockem-rs](https://github.com/LynchSKM/dockem-rs) `cli`.
+This is the GitHub Action used to install the [dockem-rs](https://github.com/LynchSKM/dockem-rs) `cli`.
 
 # Usage
 
-Below is an example of a Github Action that pulls in the `cli`,
+Below is an example of a GitHub Action that pulls in the `cli`,
 
 ```yaml
 name: "Run Action"
