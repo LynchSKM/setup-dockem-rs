@@ -22,10 +22,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Dockem
+      - name: Setup dockem-rs
         uses: LynchSKM/setup-dockem-rs@v1
 
-      - name: Run Dockem
+      - name: Run dockem-rs
         run: dockem-rs --version
 ```
 
