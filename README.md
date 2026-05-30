@@ -1,10 +1,10 @@
-![Dockem](docs/logo.png)
+![Dockem-RS](docs/logo.png)
 
-This is the Github Action used to install the [dockem](https://github.com/kerren/dockem) `cli`.
+This is the GitHub Action used to install the [dockem-rs](https://github.com/LynchSKM/dockem-rs) `cli`.
 
 # Usage
 
-Below is an example of a Github Action that pulls in the `cli`,
+Below is an example of a GitHub Action that pulls in the `cli`,
 
 ```yaml
 name: "Run Action"
@@ -22,28 +22,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Dockem
-        uses: kerren/setup-dockem@v2
+      - name: Setup dockem-rs
+        uses: LynchSKM/setup-dockem-rs@v1
 
-      - name: Run Dockem
-        run: dockem --version
+      - name: Run dockem-rs
+        run: dockem-rs --version
 ```
 
-You are able to track a specific version or the lastest within that major version number. For instance, you can use `v2.1.0` like so,
-
+You are able to track a specific version or the latest within that major version number. For instance, you can use `v1.2.1` like so,
 ```yaml
-      - name: Setup Dockem
-        uses: kerren/setup-dockem@v2.1.0
+      - name: Setup dockem-rs
+        uses: LynchSKM/setup-dockem-rs@v1.2.1
 
-      - name: Run Dockem
-        run: dockem --version
+      - name: Run dockem-rs
+        run: dockem-rs --version
 ```
 
-Or use the latest of version `2` like so,
+Or use the latest of version `1` like so,
 ```yaml
-      - name: Setup Dockem
-        uses: kerren/setup-dockem@v2
+      - name: Setup dockem-rs
+        uses: LynchSKM/setup-dockem-rs@v1
 
-      - name: Run Dockem
-        run: dockem --version
+      - name: Run dockem-rs
+        run: dockem-rs --version
 ```
